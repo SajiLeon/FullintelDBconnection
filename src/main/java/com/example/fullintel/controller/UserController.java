@@ -24,6 +24,7 @@ public class UserController {
     @GetMapping("/api/v1/test")
     public ResponseEntity<?> getUser() throws Exception {
         userDao.selectAllUser("admin@capestart.com","b85e2529d52e65a03acba2d8591b712c");
+        System.out.println("Hiii");
         return ResponseEntity.ok("Hello");
     }
 }
